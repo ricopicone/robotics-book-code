@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <package>
-  <name>chapter3</name>
+  <name>rico_topics</name>
   <version>1.0.0</version>
-  <description>Sample code from chapter 3 of "Programming Robots with ROS", by
-    Quigley, Gerkey and Smart (O'Reilly Media, Inc.)</description>
+  <description>Code for ROS Topics chapter of Robotics text</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="gbiggs@killbots.net">Geoffrey Biggs</maintainer>
+  <maintainer email="rpicone@stmartin.edu">Rico Picone</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -21,14 +20,15 @@
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
   <!-- <url type="website">http://wiki.ros.org/chapter3</url> -->
-  <url type="website">http://shop.oreilly.com/product/0636920024736.do</url>
-  <url type="repository">https://github.com/osrf/rosbook</url>
+  <url type="website">http://ricopic.one</url>
+  <url type="repository">https://github.com/ricopicone/robotics-book-code</url>
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
   <!-- Authors do not have to be maintainers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+  <author>Rico Picone</author>
   <author>Morgan Quigley</author>
   <author>Brian Gerkey</author>
   <author>William D. Smart</author>
