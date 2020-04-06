@@ -26,6 +26,10 @@ source devel/setup.bash
 
 The chapter packages are now available to your ROS distribution. If you have `rosbash` installed (and you should), the chapter packages should appear to `roscd` and `rosls`.
 
+## Organization
+
+Due to the developing nature of the text and code, chapter numbers are omitted and instead are identified by abbreviated name. For instance, the chapter _ROS topics_ is abbreviated `rico_topics`. The prefix `rico_` is included to differentiate the textbook packages.
+
 ## Origins
 
 This repository began as a fork of the sample code [repository](https://github.com/gbiggs/ros_book_sample_code) that accompanies the excellent text _Programming Robots with ROS_, by Morgan Quigley, Brian Gerkey and William D. Smart (O'Reilly Media, Inc., 2015). The original repository was distributed under the Apache 2.0 license. Differences in ROS and Ubuntu software versions, book organizational structure, and code details suggested moving from fork to distinct project, but I express my significant debt to this original repository and gratitude to its authors.
