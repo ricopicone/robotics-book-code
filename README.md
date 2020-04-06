@@ -1,23 +1,31 @@
-# "Programming Robots with ROS sample code"
+# Robotics book code
 
-This repository contains all the examples from the book "Programming Robots
-with ROS", by Morgan Quigley, Brian Gerkey and William D. Smart (O'Reilly Media,
-Inc., 2015).
+This repo accompanies the text ricopic.one/robotics. It is organized into packages, one for each chapter. 
 
-The code is originally written and copyright by Morgan Quigley, Brian Gerkey and
-William D. Smart.
+## Requirements
 
-The examples have had bug fixes applied, where those bugs have been found.
+The text assumes the use of ROS Melodic Morenia and Ubuntu 18.04.4 LTS (Bionic Beaver). Instructions for installing this development environment are included in the text.
 
-The code is organised by chapters, with one package per chapter. For most
-chapters, the examples give file names. The code in this repository uses these
-file names to make the examples easy to relate to the book and easy to use from
-each other (e.g. when launching nodes from launch files). For examples where
-file names are not provided (primarily the examples in chapters 16, 17 and 18,
-where a single file is gradually built up throughout the chapter), the files in
-this repository are instead named after the example numbers.
+## Installation
 
-The examples have been tested on Indigo. All examples except for chapters 11
-and 14 (due to lack of required support packages) have also been tested on
-Kinetic; chapter 12 currently is buggy in Kinetic - the line does not show up
-in Gazebo.
+To make the chapter packages available to your ROS distribution, complete the following steps.
+
+1. Create a ROS workspace with a `src` directory.
+2. Download and unzip or clone this repository to the `src` directory.
+```bash
+git clone https://github.com/ricopicone/robotics-book-code.git
+```
+3. In the workspace, make.
+```bash
+catkin_make
+```
+4. Source your workspace.
+```bash
+source devel/setup.bash
+```
+
+The chapter packages are now available to your ROS distribution. If you have `rosbash` installed (and you should), the chapter packages should appear to `roscd` and `rosls`.
+
+## Origins
+
+This repository began as a fork of the sample code [repository](https://github.com/gbiggs/ros_book_sample_code) that accompanies the excellent text _Programming Robots with ROS_, by Morgan Quigley, Brian Gerkey and William D. Smart (O'Reilly Media, Inc., 2015). The original repository was distributed under the Apache 2.0 license. Differences in ROS and Ubuntu software versions, book organizational structure, and code details suggested moving from fork to distinct project, but I express my significant debt to this original repository and gratitude to its authors.
