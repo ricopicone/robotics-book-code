@@ -1,6 +1,6 @@
 # Robotics book code
 
-This repo accompanies the text ricopic.one/robotics. It is organized into packages, one for each chapter. 
+This repo accompanies the text [ricopic.one/robotics](http://ricopic.one/robotics). It is organized into packages, one for each chapter. 
 
 ## Requirements
 
