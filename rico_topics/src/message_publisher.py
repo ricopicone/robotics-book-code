@@ -2,7 +2,7 @@
 
 import rospy
 
-from chapter3.msg import Complex
+from rico_topics.msg import Complex
 
 from random import random
 

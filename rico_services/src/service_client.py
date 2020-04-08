@@ -2,7 +2,7 @@
 
 import rospy
 
-from chapter4.srv import WordCount
+from rico_services.srv import WordCount
 
 import sys
 

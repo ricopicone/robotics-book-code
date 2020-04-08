@@ -2,7 +2,7 @@
 
 import rospy
 
-from chapter4.srv import WordCount, WordCountResponse
+from rico_services.srv import WordCount, WordCountResponse
 
 
 def count_words(request):

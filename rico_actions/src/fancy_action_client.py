@@ -4,7 +4,7 @@ import rospy
 
 import time
 import actionlib
-from chapter5.msg import TimerAction, TimerGoal
+from rico_actions.msg import TimerAction, TimerGoal
 
 
 def feedback_cb(feedback):

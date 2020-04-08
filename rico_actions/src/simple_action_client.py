@@ -3,7 +3,7 @@
 import rospy
 
 import actionlib
-from chapter5.msg import TimerAction, TimerGoal, TimerResult
+from rico_actions.msg import TimerAction, TimerGoal, TimerResult
 
 
 rospy.init_node('timer_action_client')
