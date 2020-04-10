@@ -11,7 +11,7 @@ The text assumes the use of ROS Melodic Morenia and Ubuntu 18.04.4 LTS (Bionic B
 To make the chapter packages available to your ROS distribution, complete the following steps.
 
 1. Create a ROS workspace with a `src` directory.
-2. Download and unzip or clone this repository to the `src` directory.
+2. Download and unzip or (fork! and) clone this repository to the `src` directory.
 ```bash
 git clone https://github.com/ricopicone/robotics-book-code.git
 ```
