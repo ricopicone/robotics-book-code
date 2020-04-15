@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import Int32
 
 def callback(msg):  # callback for receiving messages
-  print msg.data    # print to Terminal
+  print(msg.data)   # print to Terminal
 
 rospy.init_node('topic_subscriber') # initialize node
 
