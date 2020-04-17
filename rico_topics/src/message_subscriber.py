@@ -1,18 +1,18 @@
 #!/usr/bin/env python
-
 import rospy
-
-from chapter3.msg import Complex
-
+from rico_topics.msg import Complex
 
 def callback(msg):
-    print 'Real:', msg.real
-    print 'Imaginary:', msg.imaginary
-    print
+    print 'Real:', msg.real           # print real part
+    print 'Imaginary:', msg.imaginary # print imag part
+    print                             # blank line
 
+rospy.init_node('message_subscriber') # initialize node
 
-rospy.init_node('message_subscriber')
+sub = rospy.Subscriber( # register subscription
+  'complex',            # topic
+  Complex,              # custom type
+  callback              # callback function
+)
 
-sub = rospy.Subscriber('complex', Complex, callback)
-
-rospy.spin()
+rospy.spin() # keep node running until shut down
