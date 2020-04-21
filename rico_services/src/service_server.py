@@ -1,22 +1,16 @@
 #!/usr/bin/env python
-
 import rospy
-
 from rico_services.srv import WordCount, WordCountResponse
 
-
 def count_words(request):
-    return WordCountResponse(len(request.words.split()))
-    # or:
-    # return len(request.words.split())
-    # or:
-    # return [len(request.words.split())]
-    # or:
-    # return {'count': len(request.words.split())}
-
+  return len(request.words.split()) # num of words
 
 rospy.init_node('service_server')
 
-service = rospy.Service('word_count', WordCount, count_words)
+service = rospy.Service( # register service
+  'word_count', # service name
+  WordCount,    # service type
+  count_words   # function service provides
+)
 
 rospy.spin()
