@@ -2,7 +2,7 @@
 import rospy
 import time         # for regular Python timing
 import actionlib    # for actions!
-from rico_actions.msg import \ # import action message types
+from rico_actions.msg import \
     TimerAction, TimerGoal, TimerResult, TimerFeedback
 
 def feedback_cb(feedback): # feedback callback function

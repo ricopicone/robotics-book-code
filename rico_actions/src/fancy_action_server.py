@@ -2,7 +2,7 @@
 import rospy
 import time       # for regular Python timing
 import actionlib  # for actions!
-from rico_actions.msg import \ # import action message types
+from rico_actions.msg import \
   TimerAction, TimerGoal, TimerResult, TimerFeedback
 
 def do_timer(goal): # action function
@@ -27,7 +27,7 @@ def do_timer(goal): # action function
     feedback = TimerFeedback()
     feedback.time_elapsed = rospy.Duration.from_sec(
       time.time() - start_time)
-    feedback.time_remaining = \ 
+    feedback.time_remaining = \
       goal.time_to_wait - feedback.time_elapsed
     server.publish_feedback(feedback)
     update_count += 1
